@@ -1,3 +1,7 @@
+body{
+    background-color: #f4c5fb;
+}
+
 .navbar{
     background-color: #890404;
 }
@@ -5,3 +9,30 @@
 .nav-link{
     font-size: 25px;
 }
+
+.carousel {
+    background-color: #f4c5fb;
+}
+
+.d-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.carousel-caption{
+    top: 40%;
+}
+
+.box {
+    background-color: #89040481;
+    border-radius: 25px;
+}
+
+/* .carousel-caption{
+    top: 50%;
+    left: 50%;
+    background-color: #89040454;
+    border-radius: 25px;
+} */
