@@ -1,7 +1,3 @@
-body{
-    background-color: #f4c5fb;
-}
-
 .navbar{
     background-color: #890404;
 }
@@ -11,7 +7,7 @@ body{
 }
 
 .carousel {
-    background-color: #f4c5fb;
+    background-color: #f9d1ff;
 }
 
 .d-block {
@@ -36,3 +32,38 @@ body{
     background-color: #89040454;
     border-radius: 25px;
 } */
+
+.d-flex{
+    color: blanchedalmond;
+    background-color: #890404;
+    width: 30%;
+    padding: 30px;
+    margin: 70px auto 70px;
+    border-radius: 20px;
+}
+
+.card{
+    text-align: center;
+}
+
+#stats{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: auto;
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.carousel-inner:hover .carousel-item{
+    opacity: 0.5;
+}
+
+.carousel-inner:hover #stats{
+    opacity: 1;
+}
