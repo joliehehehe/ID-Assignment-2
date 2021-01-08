@@ -21,34 +21,29 @@
     top: 40%;
 }
 
-.box {
-    background-color: #89040481;
-    border-radius: 25px;
-}
-
-/* .carousel-caption{
-    top: 50%;
-    left: 50%;
-    background-color: #89040454;
-    border-radius: 25px;
-} */
-
-.d-flex{
+#box{
     color: blanchedalmond;
     background-color: #890404;
     width: 30%;
     padding: 30px;
-    margin: 70px auto 70px;
+    margin: 60px auto 60px;
     border-radius: 20px;
+}
+.col{
+    width:auto
 }
 
 .card{
-    text-align: center;
+    margin-bottom: 50px;
+}
+
+#card-container{
+    margin-left: 70px;
+    margin-right: 70px;;
 }
 
 #stats{
     color: black;
-    font-size: 20px;
     text-align: center;
     padding: auto;
     transition: .2s ease;
