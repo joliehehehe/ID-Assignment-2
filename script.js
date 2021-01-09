@@ -13,6 +13,7 @@ $(document).ready(function(){
         function(data) {
         //LOOP results
         let display = "";
+        let mycardList = []
         for(var i = 0; i < data.results.length;i++){
           let results = data.results[i];
           let power_min = results.performance_min + results.technique_min + results.technique_min
@@ -53,17 +54,27 @@ $(document).ready(function(){
                     <p class="card-text">${results.full_skill}</p>
                   </div>
 
-                  <button type="button" class="btn btn-dark">Click here to add My List</button>
+                  <button type="button" class="btn btn-dark" id="addCard">Click here to add My List</button>
             
                 </div>
               </div>`
+
+              if(document.getElementById('addCard').clicked == true)
+              {
+                `${mycardList}`.append(results)
+              }
+
         }//end loop
         //place our entire loop content into the container
         $('#card-container').html(display);
 
+        
+
+
+
+
         document.addEventListener(mycard, function(event) {
 
-          let mycardList = []
 
           if (localStorage.getItem("mycardList") !== null) {
             mycardList = JSON.parse(localStorage.getItem("mycardList"));
