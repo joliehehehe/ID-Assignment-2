@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+  
   let url = 'https://bandori.party/api/cards/?page=30'
 
   fetch(url)
@@ -21,7 +21,9 @@ $(document).ready(function(){
         let power_min = results.performance_min + results.technique_min + results.technique_min;
         let power_max = results.performance_max + results.technique_max + results.technique_max;
         let power_trained = results.performance_trained_max + results.technique_trained_max + results.technique_trained_max;
-
+        if (results.art_trained == null){
+          results.art_trained = results.art
+        }
         displayCard = `${displayCard} <div class="card" id="Card_${i}" style="width: 30rem;">
           <div id="carousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner" id="cardsCarousel">
@@ -67,7 +69,9 @@ $(document).ready(function(){
         let power_min = results.performance_min + results.technique_min + results.technique_min;
         let power_max = results.performance_max + results.technique_max + results.technique_max;
         let power_trained = results.performance_trained_max + results.technique_trained_max + results.technique_trained_max;
-
+        if (results.art_trained == null){
+          results.art_trained = results.art
+        }
         if (results.i_attribute == "Cool"){
           displayCardCool = `${displayCardCool} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -114,7 +118,9 @@ $(document).ready(function(){
         let power_min = results.performance_min + results.technique_min + results.technique_min;
         let power_max = results.performance_max + results.technique_max + results.technique_max;
         let power_trained = results.performance_trained_max + results.technique_trained_max + results.technique_trained_max;
-
+        if (results.art_trained == null){
+          results.art_trained = results.art
+        }
         if (results.i_attribute == "Power"){
           displayCardPower = `${displayCardPower} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -161,7 +167,9 @@ $(document).ready(function(){
         let power_min = results.performance_min + results.technique_min + results.technique_min;
         let power_max = results.performance_max + results.technique_max + results.technique_max;
         let power_trained = results.performance_trained_max + results.technique_trained_max + results.technique_trained_max;
-
+        if (results.art_trained == null){
+          results.art_trained = results.art
+        }
         if (results.i_attribute == "Happy"){
           displayCardHappy = `${displayCardHappy} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -208,7 +216,9 @@ $(document).ready(function(){
         let power_min = results.performance_min + results.technique_min + results.technique_min;
         let power_max = results.performance_max + results.technique_max + results.technique_max;
         let power_trained = results.performance_trained_max + results.technique_trained_max + results.technique_trained_max;
-
+        if (results.art_trained == null){
+          results.art_trained = results.art
+        }
         if (results.i_attribute == "Pure"){
           displayCardPure = `${displayCardPure} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -255,7 +265,9 @@ $(document).ready(function(){
         let power_min = results.performance_min + results.technique_min + results.technique_min;
         let power_max = results.performance_max + results.technique_max + results.technique_max;
         let power_trained = results.performance_trained_max + results.technique_trained_max + results.technique_trained_max;
-
+        if (results.art_trained == null){
+          results.art_trained = results.art
+        }
         if (results.i_rarity == 1){
           displayCard1Star = `${displayCard1Star} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -302,7 +314,9 @@ $(document).ready(function(){
         let power_min = results.performance_min + results.technique_min + results.technique_min;
         let power_max = results.performance_max + results.technique_max + results.technique_max;
         let power_trained = results.performance_trained_max + results.technique_trained_max + results.technique_trained_max;
-
+        if (results.art_trained == null){
+          results.art_trained = results.art
+        }
         if (results.i_rarity == 2){
           displayCard2Star = `${displayCard2Star} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -350,6 +364,9 @@ $(document).ready(function(){
         let power_max = results.performance_max + results.technique_max + results.technique_max;
         let power_trained = results.performance_trained_max + results.technique_trained_max + results.technique_trained_max;
 
+        if (results.art_trained == null){
+          results.art_trained = results.art
+        }
         if (results.i_rarity == 3){
           displayCard3Star = `${displayCard3Star} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -397,6 +414,9 @@ $(document).ready(function(){
         let power_max = results.performance_max + results.technique_max + results.technique_max;
         let power_trained = results.performance_trained_max + results.technique_trained_max + results.technique_trained_max;
 
+        if (results.art_trained == null){
+          results.art_trained = results.art
+        }
         if (results.i_rarity == 4){
           displayCard4Star = `${displayCard4Star} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -435,7 +455,10 @@ $(document).ready(function(){
 
         };//end loop
         $('#card-container-4Star').html(displayCard4Star);
+        
       }
-
+      $('.carousel').carousel({
+        interval: 3000
+      })
     });
 });
