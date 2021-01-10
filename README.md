@@ -29,10 +29,17 @@ This website is for fans who play BanG Dream! Girls Band Party! who would like t
 ## Technology Used
 - Visual Studio Code
     - This project was done on Visual Studio Code
-- [Bootstrap](https://getbootstrap.com/) (CSS, Javascript)
-    - This project made use of Bootstrap for templates
+- [JQuery](https://code.jquery.com/jquery-3.2.1.slim.min.js)
+    - The project uses JQuery to simplify DOM manipulation
+- [Bootstrap CSS](https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css)
+- [Bootstrap JS](https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js)
+    - This project made use of Bootstrap CSS and JS
+- [Ajax](https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js)
+    - This project used Ajax
 - [Application Programming Interface](https://bandori.party/wiki/BanG%20Dream!%20Girls%20Band%20API) (API)
     - This project fetched an API for data
+- [Normalize.css](https://necolas.github.io/normalize.css/)
+    - This projected utilised normalize.css
 
 ## Testing
 ### Features
