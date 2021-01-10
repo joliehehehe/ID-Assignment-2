@@ -60,6 +60,34 @@
     width: 100%;
 }
 
+#card-container-Cool{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#card-container-Power{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#card-container-Happy{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#card-container-Pure{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 #stats{
     color: black;
     font-size: 15px;
