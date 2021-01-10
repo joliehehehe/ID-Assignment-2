@@ -48,7 +48,8 @@ This website is for fans who play BanG Dream! Girls Band Party! who would like t
 ### Content
 
 ### Media
-- Original game logo
+- [Original game logo](https://bang-dream-gbp-en.bushiroad.com/wordpress/wp-content/themes/bang-dream_gbp/assets/images/sp/index/logo.png)
+    - Editted version for the website by Jolie Ng (me)
 - Home screen image 1
 
 ### Achnowledgements
