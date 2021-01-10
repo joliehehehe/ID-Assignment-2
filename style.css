@@ -88,6 +88,34 @@
     width: 100%;
 }
 
+#card-container-1Star{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#card-container-2Star{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#card-container-3Star{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#card-container-4Star{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 #stats{
     color: black;
     font-size: 15px;
