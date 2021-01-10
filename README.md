@@ -1,4 +1,4 @@
-# ID Assignment 2 - BanG Dream! Girls Band Party! Fan Wiki Wesbite
+# ID Assignment 2 - BanG Dream! Girls Band Party! Fan Wiki Website
 In this project, I will be creating a [Fan Wiki website](https://joliehehehe.github.io/ID-Assignment-2/) for the in-game cards from the Japanese/English rhythm game BanG Dream! Girls Band Party! This project aims to be able to list down cards from the game, as well as details such as name and statistics.
 
 ## Design Process
@@ -56,3 +56,6 @@ This website is for fans who play BanG Dream! Girls Band Party! who would like t
 - Guiding for this project was given by Ms Dai Mei Hua
 - Borrowed API is by [MagiCircles Developers](https://twitter.com/magicircles_dev)
     - API taken on [Bandori party](https://bandori.party/wiki/BanG%20Dream!%20Girls%20Band%20API)
+- Bootstrap was used in this project
+    - CSS
+    - Javascript
