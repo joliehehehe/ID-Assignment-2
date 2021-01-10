@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-  let url = 'https://bandori.party/api/cards/?page=3'
+  let url = 'https://bandori.party/api/cards/?page=30'
 
   fetch(url)
     .then(
