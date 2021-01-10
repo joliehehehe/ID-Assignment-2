@@ -18,7 +18,14 @@
 }
 
 .carousel-caption{
-    top: 40%;
+    font-size: 30px;
+    top: 20%;
+}
+
+.home-greeting{
+    background-color: #890404a2;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 #box{
@@ -55,6 +62,8 @@
 
 #stats{
     color: black;
+    font-size: 15px;
+    font-weight: bold;
     text-align: center;
     padding: auto;
     transition: .5s ease;
@@ -70,10 +79,21 @@
     text-align: center;
 }
 
-.carousel-inner:hover .carousel-item{
+#cardsCarousel:hover .carousel-item{
     opacity: 0.5;
 }
 
-.carousel-inner:hover #stats{
+#cardsCarousel:hover #stats{
     opacity: 1;
+}
+
+@media (max-width: 768px) {    
+    .nav-link{
+        font-size: 15px;
+    }
+    
+    .carousel-caption{
+        font-size: 15px;
+        top: 20%;
+    }
 }
