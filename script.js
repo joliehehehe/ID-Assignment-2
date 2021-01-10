@@ -55,7 +55,6 @@ $(document).ready(function(){
           </h6>
           <p class="card-text">${results.full_skill}</p>
 
-          <button type="button" class="btn btn-dark" id="addCard_${i}">Click here to add My List</button>
           </div>
           </div>`
 
@@ -104,7 +103,6 @@ $(document).ready(function(){
             </h6>
             <p class="card-text">${results.full_skill}</p>
 
-            <button type="button" class="btn btn-dark" id="addCard_${i}">Click here to add My List</button>
             </div>
             </div>`
 
@@ -153,7 +151,6 @@ $(document).ready(function(){
             </h6>
             <p class="card-text">${results.full_skill}</p>
 
-            <button type="button" class="btn btn-dark" id="addCard_${i}">Click here to add My List</button>
             </div>
             </div>`
 
@@ -202,7 +199,6 @@ $(document).ready(function(){
             </h6>
             <p class="card-text">${results.full_skill}</p>
 
-            <button type="button" class="btn btn-dark" id="addCard_${i}">Click here to add My List</button>
             </div>
             </div>`
 
@@ -251,7 +247,6 @@ $(document).ready(function(){
             </h6>
             <p class="card-text">${results.full_skill}</p>
 
-            <button type="button" class="btn btn-dark" id="addCard_${i}">Click here to add My List</button>
             </div>
             </div>`
 
@@ -300,7 +295,6 @@ $(document).ready(function(){
             </h6>
             <p class="card-text">${results.full_skill}</p>
 
-            <button type="button" class="btn btn-dark" id="addCard_${i}">Click here to add My List</button>
             </div>
             </div>`
 
@@ -349,7 +343,6 @@ $(document).ready(function(){
             </h6>
             <p class="card-text">${results.full_skill}</p>
 
-            <button type="button" class="btn btn-dark" id="addCard_${i}">Click here to add My List</button>
             </div>
             </div>`
 
@@ -399,7 +392,6 @@ $(document).ready(function(){
             </h6>
             <p class="card-text">${results.full_skill}</p>
 
-            <button type="button" class="btn btn-dark" id="addCard_${i}">Click here to add My List</button>
             </div>
             </div>`
 
@@ -449,7 +441,6 @@ $(document).ready(function(){
             </h6>
             <p class="card-text">${results.full_skill}</p>
 
-            <button type="button" class="btn btn-dark" id="addCard_${i}">Click here to add My List</button>
             </div>
             </div>`
 
