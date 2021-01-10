@@ -2,6 +2,7 @@ $(document).ready(function(){
   
   let url = 'https://bandori.party/api/cards/?page=30'
 
+  // fetch api
   fetch(url)
     .then(
       function(response) {
@@ -15,6 +16,7 @@ $(document).ready(function(){
         //console.log(results)
         //@[cher]
       //LOOP results
+      // all cards display
       let displayCard = "";
       for(var i = 0; i < data.results.length;i++){
         let results = data.results[i];
@@ -62,6 +64,7 @@ $(document).ready(function(){
       //place our entire loop content into the container
       $('#card-container').html(displayCard);
 
+      // cool cards display
       let displayCardCool = "";
       for(var i = 0; i < data.results.length;i++){
         let results = data.results[i];
@@ -71,6 +74,7 @@ $(document).ready(function(){
         if (results.art_trained == null){
           results.art_trained = results.art
         }
+        // only take cards with cool attribute
         if (results.i_attribute == "Cool"){
           displayCardCool = `${displayCardCool} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -107,9 +111,11 @@ $(document).ready(function(){
             </div>`
 
         };//end loop
+        //place our entire loop content into the container
         $('#card-container-Cool').html(displayCardCool);
       }
 
+      // power cards display
       let displayCardPower = "";
       for(var i = 0; i < data.results.length;i++){
         let results = data.results[i];
@@ -119,6 +125,7 @@ $(document).ready(function(){
         if (results.art_trained == null){
           results.art_trained = results.art
         }
+        // only take cards with power attribute
         if (results.i_attribute == "Power"){
           displayCardPower = `${displayCardPower} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -155,9 +162,11 @@ $(document).ready(function(){
             </div>`
 
         };//end loop
+        //place our entire loop content into the container
         $('#card-container-Power').html(displayCardPower);
       }
 
+      // happy cards display
       let displayCardHappy = "";
       for(var i = 0; i < data.results.length;i++){
         let results = data.results[i];
@@ -167,6 +176,7 @@ $(document).ready(function(){
         if (results.art_trained == null){
           results.art_trained = results.art
         }
+        // only take cards with happy attribute
         if (results.i_attribute == "Happy"){
           displayCardHappy = `${displayCardHappy} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -203,9 +213,11 @@ $(document).ready(function(){
             </div>`
 
         };//end loop
+        //place our entire loop content into the container
         $('#card-container-Happy').html(displayCardHappy);
       }
 
+      // pure cards display
       let displayCardPure = "";
       for(var i = 0; i < data.results.length;i++){
         let results = data.results[i];
@@ -215,6 +227,7 @@ $(document).ready(function(){
         if (results.art_trained == null){
           results.art_trained = results.art
         }
+        // only take cards with pure attribute
         if (results.i_attribute == "Pure"){
           displayCardPure = `${displayCardPure} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -251,9 +264,11 @@ $(document).ready(function(){
             </div>`
 
         };//end loop
+        //place our entire loop content into the container
         $('#card-container-Pure').html(displayCardPure);
       }
 
+      // 1 star cards display
       let displayCard1Star = "";
       for(var i = 0; i < data.results.length;i++){
         let results = data.results[i];
@@ -263,6 +278,8 @@ $(document).ready(function(){
         if (results.art_trained == null){
           results.art_trained = results.art
         }
+
+        // only take cards with 1 star rarity
         if (results.i_rarity == 1){
           displayCard1Star = `${displayCard1Star} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -299,9 +316,11 @@ $(document).ready(function(){
             </div>`
 
         };//end loop
+        //place our entire loop content into the container
         $('#card-container-1Star').html(displayCard1Star);
       }
 
+      // 2 stars cards display
       let displayCard2Star = "";
       for(var i = 0; i < data.results.length;i++){
         let results = data.results[i];
@@ -311,6 +330,7 @@ $(document).ready(function(){
         if (results.art_trained == null){
           results.art_trained = results.art
         }
+        // only take cards with 2 star rarity
         if (results.i_rarity == 2){
           displayCard2Star = `${displayCard2Star} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -347,9 +367,11 @@ $(document).ready(function(){
             </div>`
 
         };//end loop
+        //place our entire loop content into the container
         $('#card-container-2Star').html(displayCard2Star);
       }
 
+      // 3 stars cards display
       let displayCard3Star = "";
       for(var i = 0; i < data.results.length;i++){
         let results = data.results[i];
@@ -360,6 +382,7 @@ $(document).ready(function(){
         if (results.art_trained == null){
           results.art_trained = results.art
         }
+        // only take cards with 2 stars rarity
         if (results.i_rarity == 3){
           displayCard3Star = `${displayCard3Star} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -396,9 +419,11 @@ $(document).ready(function(){
             </div>`
 
         };//end loop
+        //place our entire loop content into the container
         $('#card-container-3Star').html(displayCard3Star);
       }
 
+      // 4 stars cards display
       let displayCard4Star = "";
       for(var i = 0; i < data.results.length;i++){
         let results = data.results[i];
@@ -409,6 +434,7 @@ $(document).ready(function(){
         if (results.art_trained == null){
           results.art_trained = results.art
         }
+        // only take cards with 4 star rarity
         if (results.i_rarity == 4){
           displayCard4Star = `${displayCard4Star} <div class="card" id="Card_${i}" style="width: 30rem;">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -445,9 +471,11 @@ $(document).ready(function(){
             </div>`
 
         };//end loop
+        //place our entire loop content into the container
         $('#card-container-4Star').html(displayCard4Star);
         
       }
+      // set carousel duration for cards before changing image
       $('.carousel').carousel({
         interval: 3000
       })
