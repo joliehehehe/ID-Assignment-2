@@ -3,22 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Unofficial BanG Dream! Girls Band Party! Home Page</title>
+        <title>Unofficial BanG Dream! Girls Band Party! All 4 Star Cards Page</title>
         <link href="normalize.css" rel="stylesheet" type="text/css" />
             <!-- Linking google fonts -->
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Merriweather:wght@300&display=swap" rel="stylesheet">
             <!-- Linking my css file -->
             <link href="style.css" rel="stylesheet" type="text/css" />
-            <!-- Bootstrap CSS -->
+            <!-- Linking Bootstrap CSS -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
+        <!-- Navigation bar -->
         <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
+            <!-- Navigation bar icon -->
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" height="50" class="d-inline-block align-top" alt="">
             </a>
-            
+            <!-- Navigation bar links to other pages -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
@@ -30,11 +32,14 @@
         </nav>
 
         <div>
+            <!-- Heading -->
             <h2 class="d-flex justify-content-center" id="box">All Cards</h2>
         </div>
 
         <div class="d-flex justify-content-center">
+            <!-- Card filter buttons -->
             <div class="dropdown">
+                <!-- Card filter by attribute -->
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Sort by Attribute
                 </button>
@@ -46,6 +51,7 @@
                 </div>
               </div>
               <div class="dropdown">
+                  <!-- Card filter by rarity -->
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Sort by Rarity
                 </button>
@@ -59,13 +65,21 @@
         </div>
 
         <div>
+            <!-- Card list for all -->
             <div id="card-container"></div>
 
         </div>
 
+        <footer>
+            <!-- Copyright footer -->
+            <p>Copyright © 2020 by Jolie Ng</p>
+        </footer>
+
+        <!-- Linking Bootstrap Javascript -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Linking my Javascript file -->
         <script src="script.js"></script>
     </body>
 </html>
